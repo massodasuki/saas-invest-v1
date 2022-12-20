@@ -332,7 +332,7 @@ function SidebarMenu() {
                   disableRipple
                   component={RouterLink}
                   onClick={closeSidebar}
-                  to="/management/profile/settings"
+                  to="/account/statements"
                   startIcon={<DisplaySettingsTwoToneIcon />}
                 >
                   Statement

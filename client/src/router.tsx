@@ -30,6 +30,9 @@ const Messenger = Loader(
 const Transactions = Loader(
   lazy(() => import('src/content/applications/Transactions'))
 );
+const Statements = Loader(
+  lazy(() => import('src/content/applications/Statements'))
+);
 const UserProfile = Loader(
   lazy(() => import('src/content/applications/Users/profile'))
 );
@@ -180,6 +183,10 @@ const routes: RouteObject[] = [
       {
         path: 'transactions',
         element: <Transactions />
+      },
+      {
+        path: 'statements',
+        element: <Statements />
       },
       {
         path: 'profile',

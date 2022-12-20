@@ -6,7 +6,7 @@ import Footer from 'src/components/Footer';
 
 import RecentOrders from './RecentOrders';
 
-function ApplicationsStatement() {
+function ApplicationsStatements() {
   return (
     <>
       <Helmet>
@@ -33,4 +33,4 @@ function ApplicationsStatement() {
   );
 }
 
-export default ApplicationsStatement;
+export default ApplicationsStatements;
