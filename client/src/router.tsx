@@ -170,6 +170,37 @@ const routes: RouteObject[] = [
     ]
   },
   {
+    path: 'account',
+    element: <SidebarLayout />,
+    children: [
+      {
+        path: '',
+        element: <Navigate to="transactions" replace />
+      },
+      {
+        path: 'transactions',
+        element: <Transactions />
+      },
+      {
+        path: 'profile',
+        children: [
+          {
+            path: '',
+            element: <Navigate to="details" replace />
+          },
+          {
+            path: 'details',
+            element: <UserProfile />
+          },
+          {
+            path: 'settings',
+            element: <UserSettings />
+          }
+        ]
+      }
+    ]
+  },
+  {
     path: '/components',
     element: <SidebarLayout />,
     children: [

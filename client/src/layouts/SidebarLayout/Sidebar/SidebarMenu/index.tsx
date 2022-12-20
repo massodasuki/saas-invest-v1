@@ -291,6 +291,81 @@ function SidebarMenu() {
             </List>
           </SubMenuWrapper>
         </List>
+
+        <List
+          component="div"
+          subheader={
+            <ListSubheader component="div" disableSticky>
+              Accounts
+            </ListSubheader>
+          }
+        >
+          <SubMenuWrapper>
+            <List component="div">
+              
+              <ListItem component="div">
+                <Button
+                  disableRipple
+                  component={RouterLink}
+                  onClick={closeSidebar}
+                  to="/management/profile/details"
+                  startIcon={<AccountCircleTwoToneIcon />}
+                >
+                  Dashboard
+                </Button>
+              </ListItem>
+
+              <ListItem component="div">
+                <Button
+                  disableRipple
+                  component={RouterLink}
+                  onClick={closeSidebar}
+                  to="/account/transactions"
+                  startIcon={<DisplaySettingsTwoToneIcon />}
+                >
+                  Transaction
+                </Button>
+              </ListItem>
+
+              <ListItem component="div">
+                <Button
+                  disableRipple
+                  component={RouterLink}
+                  onClick={closeSidebar}
+                  to="/management/profile/settings"
+                  startIcon={<DisplaySettingsTwoToneIcon />}
+                >
+                  Statement
+                </Button>
+              </ListItem>
+
+              <ListItem component="div">
+                <Button
+                  disableRipple
+                  component={RouterLink}
+                  onClick={closeSidebar}
+                  to="/management/profile/settings"
+                  startIcon={<DisplaySettingsTwoToneIcon />}
+                >
+                  Refferal
+                </Button>
+              </ListItem>
+
+              <ListItem component="div">
+                <Button
+                  disableRipple
+                  component={RouterLink}
+                  onClick={closeSidebar}
+                  to="/management/profile/settings"
+                  startIcon={<DisplaySettingsTwoToneIcon />}
+                >
+                  Support
+                </Button>
+              </ListItem>
+            
+            </List>
+          </SubMenuWrapper>
+        </List>
         <List
           component="div"
           subheader={
