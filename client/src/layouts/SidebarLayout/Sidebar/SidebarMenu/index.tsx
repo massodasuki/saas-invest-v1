@@ -180,7 +180,7 @@ function SidebarMenu() {
   return (
     <>
       <MenuWrapper>
-        <List component="div">
+        {/* <List component="div">
           <SubMenuWrapper>
             <List component="div">
               <ListItem component="div">
@@ -255,8 +255,9 @@ function SidebarMenu() {
               </ListItem>
             </List>
           </SubMenuWrapper>
-        </List>
-        <List
+        </List> */}
+        
+        {/* <List
           component="div"
           subheader={
             <ListSubheader component="div" disableSticky>
@@ -290,7 +291,7 @@ function SidebarMenu() {
               </ListItem>
             </List>
           </SubMenuWrapper>
-        </List>
+        </List> */}
 
         <List
           component="div"
@@ -308,7 +309,7 @@ function SidebarMenu() {
                   disableRipple
                   component={RouterLink}
                   onClick={closeSidebar}
-                  to="/management/profile/details"
+                  to="/account/dashboard"
                   startIcon={<AccountCircleTwoToneIcon />}
                 >
                   Dashboard
@@ -344,7 +345,7 @@ function SidebarMenu() {
                   disableRipple
                   component={RouterLink}
                   onClick={closeSidebar}
-                  to="/management/profile/settings"
+                  to="/account/refferal"
                   startIcon={<DisplaySettingsTwoToneIcon />}
                 >
                   Refferal
@@ -356,7 +357,7 @@ function SidebarMenu() {
                   disableRipple
                   component={RouterLink}
                   onClick={closeSidebar}
-                  to="/management/profile/settings"
+                  to="/account/refferal"
                   startIcon={<DisplaySettingsTwoToneIcon />}
                 >
                   Support
@@ -366,6 +367,50 @@ function SidebarMenu() {
             </List>
           </SubMenuWrapper>
         </List>
+
+
+        <List
+          component="div"
+          subheader={
+            <ListSubheader component="div" disableSticky>
+              Settings
+            </ListSubheader>
+          }
+        >
+          <SubMenuWrapper>
+            <List component="div">
+              
+              <ListItem component="div">
+                <Button
+                  disableRipple
+                  component={RouterLink}
+                  onClick={closeSidebar}
+                  to="/account/dashboard"
+                  startIcon={<AccountCircleTwoToneIcon />}
+                >
+                  Main Settings
+                </Button>
+              </ListItem>
+
+              <ListItem component="div">
+                <Button
+                  disableRipple
+                  component={RouterLink}
+                  onClick={closeSidebar}
+                  to="/account/transactions"
+                  startIcon={<DisplaySettingsTwoToneIcon />}
+                >
+                  Notification
+                </Button>
+              </ListItem>
+            
+            </List>
+          </SubMenuWrapper>
+        </List>
+
+
+
+
         <List
           component="div"
           subheader={
