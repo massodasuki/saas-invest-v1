@@ -31,6 +31,7 @@ import ChromeReaderModeTwoToneIcon from '@mui/icons-material/ChromeReaderModeTwo
 import WorkspacePremiumTwoToneIcon from '@mui/icons-material/WorkspacePremiumTwoTone';
 import CameraFrontTwoToneIcon from '@mui/icons-material/CameraFrontTwoTone';
 import DisplaySettingsTwoToneIcon from '@mui/icons-material/DisplaySettingsTwoTone';
+import { MonetizationOn, MonetizationOnOutlined, MonetizationOnTwoTone } from '@mui/icons-material';
 
 const MenuWrapper = styled(Box)(
   ({ theme }) => `
@@ -358,7 +359,7 @@ function SidebarMenu() {
                   component={RouterLink}
                   onClick={closeSidebar}
                   to="/account/refferal"
-                  startIcon={<DisplaySettingsTwoToneIcon />}
+                  startIcon={<CameraFrontTwoToneIcon />}
                 >
                   Support
                 </Button>
@@ -373,7 +374,7 @@ function SidebarMenu() {
           component="div"
           subheader={
             <ListSubheader component="div" disableSticky>
-              Settings
+              Main Settings
             </ListSubheader>
           }
         >
@@ -388,7 +389,31 @@ function SidebarMenu() {
                   to="/account/dashboard"
                   startIcon={<AccountCircleTwoToneIcon />}
                 >
-                  Main Settings
+                  My Profile
+                </Button>
+              </ListItem>
+
+              <ListItem component="div">
+                <Button
+                  disableRipple
+                  component={RouterLink}
+                  onClick={closeSidebar}
+                  to="/account/dashboard"
+                  startIcon={<MonetizationOn />}
+                >
+                  Funding Account
+                </Button>
+              </ListItem>
+
+              <ListItem component="div">
+                <Button
+                  disableRipple
+                  component={RouterLink}
+                  onClick={closeSidebar}
+                  to="/account/dashboard"
+                  startIcon={<MonetizationOnOutlined />}
+                >
+                  Withdrawal Account
                 </Button>
               </ListItem>
 

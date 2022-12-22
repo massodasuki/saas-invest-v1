@@ -1,4 +1,5 @@
 import {
+  Button,
   Card,
   Box,
   Typography,
@@ -177,6 +178,13 @@ function WatchListColumn() {
                 </Typography>
               </Box>
             </Box>
+            <Box p={1} display="flex" alignItems="center">
+             <Grid sm item>
+                <Button fullWidth variant="contained">
+                  Invest
+                </Button>
+              </Grid>
+            </Box>
             <Box
               sx={{
                 display: 'flex',
@@ -252,6 +260,13 @@ function WatchListColumn() {
                 </Typography>
               </Box>
             </Box>
+            <Box p={1} display="flex" alignItems="center">
+             <Grid sm item>
+                <Button fullWidth variant="contained">
+                  Invest
+                </Button>
+              </Grid>
+            </Box>
             <Box
               sx={{
                 display: 'flex',
@@ -326,6 +341,13 @@ function WatchListColumn() {
                   ADA
                 </Typography>
               </Box>
+            </Box>
+            <Box p={1} display="flex" alignItems="center">
+             <Grid sm item>
+                <Button fullWidth variant="contained">
+                  Invest
+                </Button>
+              </Grid>
             </Box>
             <Box
               sx={{

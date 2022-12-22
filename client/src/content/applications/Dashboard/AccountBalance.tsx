@@ -130,7 +130,7 @@ function AccountBalance() {
   return (
     <Card>
       <Grid spacing={0} container>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={12}>
           <Box p={4}>
             <Typography
               sx={{
@@ -140,14 +140,16 @@ function AccountBalance() {
             >
               Account Balance
             </Typography>
-            <Box>
-              <Typography variant="h1" sx={{
-                pb: 3
-              }} gutterBottom>
-                $54,584.23
-              </Typography>
-            </Box>
             <Grid container spacing={3}>
+              <Grid sm item>
+              <Box>
+                <Typography variant="h1" sx={{
+                  pb: 3
+                }} gutterBottom>
+                  $54,584.23
+                </Typography>
+              </Box>
+              </Grid>
               <Grid sm item>
                 <Button fullWidth variant="outlined">
                   Withdraw
@@ -161,8 +163,6 @@ function AccountBalance() {
             </Grid>
           </Box>
         </Grid>
-
-        
       </Grid>
     </Card>
   );
